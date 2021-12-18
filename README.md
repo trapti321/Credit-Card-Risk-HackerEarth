@@ -16,3 +16,14 @@ We are experimenting with the following 3 gradient boosting algorithms to determ
 * XGBoost
 * LightGBM
 * CatBoost
+
+### Evaluation Metrics
+With regards to the evaluation of the models, it’s worth mentioning that we should consider Precision, Recall and F1 Score as evaluation metrics, for the following reasons:
+
+** Precision will give us the proportion of positive identifications that were indeed correct. It can be defined as:
+
+** Recall will determine the proportion of real positives that were correctly identified, and it can be defined as:
+
+** F1 Score is a metric that is useful when we need to seek a balance between precision and recall. The formula is defined as:
+
+### Since our objective is to minimize company loss, predicting the risk of client default, a good recall rate is desirable because we want to identify the maximum amount of clients that are indeed prone to stop paying their debts, thus, we are pursuing a small number of False Negatives.
