@@ -14,6 +14,15 @@ To identify the Credit card fraud , Company or person did not return money on ti
 ### Machine Learning Models
 We are experimenting with the following 3 gradient boosting algorithms to determine which one yields better results:
 * XGBoost
+     ## For the XGBoost model, we’ll tune the following hyperparameters, according to the official documentation:
+        n_estimators - The number of trees in the model
+        max_depth - Maximum depth of a tree
+        min_child_weight - Minimum sum of instance weight needed in a child
+        gamma - Minimum loss reduction required to make a further partition on a leaf node of the tree
+        learning_rate - Step size shrinkage used in the update to prevents overfitting 
+
+
+
 * LightGBM
 * CatBoost
 
