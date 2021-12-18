@@ -21,12 +21,13 @@ We are experimenting with the following 3 gradient boosting algorithms to determ
         gamma - Minimum loss reduction required to make a further partition on a leaf node of the tree
         learning_rate - Step size shrinkage used in the update to prevents overfitting 
         
-        ```python
+```python
         param_grid = {'n_estimators': range(0,1000,50),
                                'max_depth': [1, 3, 5],
                                'min_child_weight': [1, 3, 6],
                                'gamma': [0, 1, 5],
-                               'learning_rate': [0.0001, 0.001, 0.01, 0.1]}```
+                               'learning_rate': [0.0001, 0.001, 0.01, 0.1]}
+```
 
 
 
