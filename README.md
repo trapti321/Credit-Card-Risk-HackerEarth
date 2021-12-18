@@ -32,7 +32,36 @@ param_grid = {'n_estimators': range(0,1000,50),
 
 
 * LightGBM
+## Now, turning to the LightGBM model, another tree-based learning algorithm, we are going to tune the following hyperparameters, referring to the documentation:
+        
+            max_depth - Maximum depth of a tree
+            learning_rate - Shrinkage rate
+            num_leaves - Max number of leaves in one tree
+            min_data_in_leaf - Minimal number of data in one leaf
+            
+```python
+param_grid = {'max_depth': np.arange(5, 75, 10),
+              'learning_rate' : [0.001, 0.01, 0.1],
+              'num_leaves': np.arange(20, 220, 50),
+              'min_data_in_leaf': np.arange(100, 1000, 100)}
+```
+
+
+
 * CatBoost
+## Lastly, we’re going to search over hyperparameter values for CatBoost, our third gradient boosting algorithm. The following hyperparameters will be tuned, according to the documentation:
+
+               depth - Depth of the tree
+               learning_rate - As we already know, the learning rate
+               l2_leaf_reg - Coefficient at the L2 regularization term of the cost function
+
+```python
+param_grid = {'depth': [6, 8, 10],
+              'learning_rate': [0.03, 0.1],
+              'l2_leaf_reg': [1, 5, 10]}
+```
+
+
 
 ### Evaluation Metrics
 With regards to the evaluation of the models, it’s worth mentioning that we should consider Precision, Recall and F1 Score as evaluation metrics, for the following reasons:
