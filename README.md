@@ -73,3 +73,8 @@ With regards to the evaluation of the models, it’s worth mentioning that we sh
 * F1 Score is a metric that is useful when we need to seek a balance between precision and recall. The formula is defined as:
 
 ### Since our objective is to minimize company loss, predicting the risk of client default, a good recall rate is desirable because we want to identify the maximum amount of clients that are indeed prone to stop paying their debts, thus, we are pursuing a small number of False Negatives.
+
+### The best model possible would be the one that could minimize false negatives, identifying all defaulters among the client base, while also minimizing false positives, preventing clients to be wrongly classified as defaulters.
+
+
+
