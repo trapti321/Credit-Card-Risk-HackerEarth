@@ -9,3 +9,10 @@ To identify the Credit card fraud , Company or person did not return money on ti
 * Machine Learning models have been helping these companies to improve the accuracy of their credit risk analysis, providing a scientific method to identify potential debtors in advance.
 
 ### Data can be found here - https://www.hackerearth.com/challenges/competitive/amexpert-code-lab/machine-learning/credit-card-default-risk-5-95cbc85f/
+
+
+### Machine Learning Models
+We are experimenting with the following 3 gradient boosting algorithms to determine which one yields better results:
+* XGBoost
+* LightGBM
+* CatBoost
